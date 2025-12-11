@@ -7,16 +7,19 @@
         "children": [
             {
                 "name": "Delfino Plaza 100 Coins",
-                "access_rules":["$skipintro", "$splasher"],
+              "access_rules": [
+                "$spray",
+                "$yoshi",
+                "$skipintro"
+              ],
                 "children": [
                     {
                         "name": "Secret Shine",
-                        "access_rules": [
-                        ],
+                      "access_rules": [],
                         "sections": [
                             {
                                 "name": "Plaza 100 Coins",
-                                "access_rules":["$spray", "$rocket"],
+                                "access_rules":["$height"],
                                 "item_count": 1
                             }
                             ],
@@ -46,7 +49,7 @@
                         "sections": [
                             {
                                 "name": "Bianco 100 Coins",
-                                "access_rules":["$spray, $yoshi"],
+                                "access_rules":["$yoshi, $asplasher"],
                                 "item_count": 1
                             }
                         ],
@@ -96,7 +99,7 @@
                         "sections": [
                             {
                                 "name": "Gelato 100 Coins",
-                                "access_rules":["$spray, $yoshi"],
+                                "access_rules":["$splasher, $yoshi"],
                                 "item_count": 1
                             }
                         ],
@@ -147,7 +150,7 @@
                     {
                         "name": "Secret Shine",
                         "access_rules": [
-                            "$yoshi"
+                            "$asplasher"
                         ],
                         "sections": [
                             {
@@ -217,7 +220,7 @@
                         "sections": [
                             {
                                 "name": "Pianta 100 Coins",
-                                "access_rules":["$spray, $yoshi"],
+                                "access_rules":["$rocket, $yoshi, $asplasher"],
                                 "item_count": 1
                             }
                         ],

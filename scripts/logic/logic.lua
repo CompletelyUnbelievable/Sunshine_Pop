@@ -51,11 +51,11 @@ end
 
 -- Moves
 function spray()
-    return has("fludd")
+    return has("fludd") --or has("nozzlespray")
 end
 
 function hover()
-    return has("hover")
+    return has("hover") --or has("nozzlehover")
 end
 
 function turbo()
@@ -68,23 +68,11 @@ end
 
 -- Yoshi Logic
 
-function isPinnaEnterable()
-    if has("progression") == has("progression_ticket") then
-        return has("pinna")
-    elseif has("progression") == has("progression_vanilla") then
-        return shines() >= 10
-    end
-end
-
-function Pinna4()
-    return has("fludd") and has("hover")
-end
-
 function yoshi()
     if has("yoshistart") == has("skip_pinna") then
         return has("yoshi")
     elseif has("yoshistart") == has("plaza_only") then
-        return isPinnaEnterable() and Pinna4()
+        return isPinnaEnterable() and asplasher()
     end
 end
 
@@ -93,7 +81,7 @@ function skipPinnaYoshi()
         return has("yoshi")
     end
 end
--- General Items
+-- General Items (or)
 
 function splasher()
     return has("fludd") or has("hover")
@@ -111,85 +99,89 @@ function squirter()
     return has("fludd") or has("yoshi")
 end
 
-
-function skipintro()
+function skipintro() -- Is this meant to match "skip_into" from the AP?
     return has("nozzlefluddless")
+end
+-- General Items (and)
+
+function asplasher()
+    return has("fludd") and has("hover")
+end
+
+function aheight()
+    return has("hover") and has("rocket")
+end
+
+function asquirter()
+    return has("fludd") and has("yoshi")
+end
+
+-- Progression Modes
+
+function isVanilla()
+    return has("progression") == has("progression_vanilla")
+end
+
+function isTicket()
+    return has("progression") == has("progression_ticket")
 end
 
 -- Entrance Functions
--- Function for Corona and Airstrip Entrances
 
+-- Function for Corona and Airstrip Entrances
 function iscoronaenterable()
     return hascoronashines()
 end
 
+
 -- Bianco
 
-function isBiancoEnterable()
-    if has("progression") == has("progression_ticket") then
-        return has("bianco")
-    elseif has("progression") == has("progression_vanilla") then
-        return squirter()
-    end
-end
-
-function Bianco3()
-    return has("fludd")
-end
-
-function Bianco4()
-    return has("fludd") and has("hover")
+function isBiancoEnterable() --Enterable without requirements while Fluddless (still needs Bianco ticket in ticket mode though) or enterable with hover start ticket mode Bianco ticket.
+    --return syntax: (skipinto conditions) or ((entrance requirements) and ((ticket progression and has ticket) or (is vanilla progression and has shine count)))
+    return (skipintro() and ((isTicket() and has("bianco")) or isVanilla())) or (has("nozzlehover") and isTicket() and has("bianco")) or (squirter() and ((isTicket() and has("bianco")) or isVanilla()))
 end
 
 -- Ricco
 
 function isRiccoEnterable()
-    if has("progression") == has("progression_ticket") then
-        return has("ricco")
-    elseif has("progression") == has("progression_vanilla") then
-        return squirter() and shines() >= 3
-    end
+    --return syntax: (entrance requirements) and ((ticket progression and has ticket) or (is vanilla progression and has shine count))
+    return (splasher() or yoshi()) and ((isTicket() and has("ricco")) or (isVanilla() and shines() >= 3))
 end
 
 
 -- Gelato
 
 function isGelatoEnterable()
-    if has("progression") == has("progression_ticket") then
-        return has("gelato")
-    elseif has("progression") == has("progression_vanilla") then
-        return (has("fludd") or has("yoshi") or has("hover")) and shines() >= 5
-    end
+    --return syntax: (entrance requirements) and ((ticket progression and has ticket) or (is vanilla progression and has shine count))
+    return (splasher() or yoshi()) and ((isTicket() and has("gelato")) or (isVanilla() and shines() >= 5))
+end
+
+-- Pinna
+
+function isPinnaEnterable()
+    --return syntax: (entrance requirements) and ((ticket progression and has ticket) or (is vanilla progression and has shine count))
+    return (isTicket() and has("pinna")) or (isVanilla() and shines() >= 10)
 end
 
 --Sirena
 
 function isSirenaEnterable()
-    if has("progression") == has("progression_ticket") then
-        return has("sirena")
-    elseif has("progression") == has("progression_vanilla") then
-        return has("yoshi")
-    end
+    --return syntax: (entrance requirements) and ((ticket progression and has ticket) or (is vanilla progression and has shine count))
+    return has("yoshi") and ((isTicket() and has("sirena")) or isVanilla())
 end
 
 --Noki
 
 function isNokiEnterable()
-    if has("progression") == has("progression_ticket") then
-        return has("noki")
-    elseif has("progression") == has("progression_vanilla") then
-        return shines() >= 20
-    end
+    --return syntax: (entrance requirements) and ((ticket progression and has ticket) or (is vanilla progression and has shine count))
+    return ((isTicket() and has("noki")) or (isVanilla() and shines() >= 20))
 end
 
 -- Pianta
 
 function isPiantaEnterable()
-    if has("progression") == has("progression_ticket") then
-        return has("pianta") and has("rocket")
-    elseif has("progression") == has("progression_vanilla") then
-        return shines() >= 10 and has("rocket")
-    end
+    --return syntax: (entrance requirements) and ((ticket progression and has ticket) or (is vanilla progression and has shine count))
+    return has("rocket") and ((isTicket() and has("pianta")) or (isVanilla() and shines() >= 10))
 end
 
 -- Boathouse

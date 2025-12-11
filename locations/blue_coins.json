@@ -545,7 +545,7 @@
               "name": "Wall Top M",
               "visibility_rules":["$allEpisodes"],
               "access_rules": [
-                "$spray, $hover"
+                "$asplasher"
               ],
               "sections": [
                 {
@@ -692,7 +692,7 @@
               "name": "Treetop",
               "visibility_rules":["episode3", "episode4", "episode5", "episode6", "episode7", "episode8", "allepisodes"],
               "access_rules": [
-                "$spray, $hover"
+                "$asplasher"
               ],
               "sections": [
                 {
@@ -713,7 +713,7 @@
               "name": "Tourist (Changes Location Each Episode)",
               "visibility_rules":["episode3", "episode4", "episode5", "episode6", "episode7", "episode8", "allepisodes"],
               "access_rules": [
-                "$spray, $hover"
+                "$asplasher"
               ],
               "sections": [
                 {
@@ -770,7 +770,7 @@
               "name": "Windmill Pokey",
               "visibility_rules":["episode3", "episode4", "episode5", "episode6", "episode7", "episode8", "allepisodes"],
               "access_rules": [
-                "$spray, $hover"
+                "$asplasher"
               ],
               "sections": [
                 {
@@ -791,7 +791,7 @@
               "name": "Cliff",
               "visibility_rules":["episode3", "episode4", "episode5", "episode6", "episode7", "episode8", "allepisodes"],
               "access_rules": [
-                "$Bianco3"
+                "$spray"
               ],
               "sections": [
                 {
@@ -812,7 +812,7 @@
               "name": "Highest Platform",
               "visibility_rules":["episode3", "episode4", "episode5", "episode6", "episode7", "episode8", "allepisodes"],
               "access_rules": [
-                "$Bianco3"
+                "$spray"
               ],
               "sections": [
                 {
@@ -833,7 +833,7 @@
               "name": "Hillside Pokey",
               "visibility_rules":["episode4", "episode5", "episode6", "episode7", "episode8", "allepisodes"],
               "access_rules": [
-                "$Bianco4"
+                "$asplasher"
               ],
               "sections": [
                 {
@@ -854,7 +854,7 @@
               "name": "Bridge Underside",
               "visibility_rules":["episode4", "episode5", "episode6", "episode7", "episode8", "allepisodes"],
               "access_rules": [
-                "$Bianco4"
+                "$asplasher"
               ],
               "sections": [
                 {
@@ -875,7 +875,7 @@
               "name": "Wall Tower Pianta",
               "visibility_rules":["episode5", "episode6", "episode7", "episode8", "allepisodes"],
               "access_rules": [
-                "$Bianco4"
+                "$asplasher"
               ],
               "sections": [
                 {
@@ -896,7 +896,7 @@
               "name": "Petey Pillar",
               "visibility_rules":["episode6", "episode7", "episode8", "allepisodes"],
               "access_rules": [
-                "$Bianco4, $hover"
+                "$asplasher, $hover"
               ],
               "sections": [
                 {
@@ -917,7 +917,7 @@
               "name": "Underwater Left",
               "visibility_rules":["episode7", "episode8", "allepisodes"],
               "access_rules": [
-                "$Bianco4"
+                "$asplasher"
               ],
               "sections": [
                 {
@@ -938,7 +938,7 @@
               "name": "Blue Bird",
               "visibility_rules":["episode6", "episode7", "episode8", "allepisodes"],
               "access_rules": [
-                "$Bianco4, $spray"
+                "$asplasher, $spray"
               ],
               "sections": [
                 {
@@ -959,7 +959,7 @@
               "name": "Chuckster Momma",
               "visibility_rules":["episode6", "episode7", "episode8", "allepisodes"],
               "access_rules": [
-                "$Bianco4"
+                "$asplasher"
               ],
               "sections": [
                 {
@@ -980,7 +980,7 @@
               "name": "Towers House O",
               "visibility_rules":["episode7", "episode8", "allepisodes"],
               "access_rules": [
-                "$Bianco4, $spray"
+                "$asplasher"
               ],
               "sections": [
                 {
@@ -1001,7 +1001,7 @@
               "name": "Balcony House O",
               "visibility_rules":["episode7", "episode8", "allepisodes"],
               "access_rules": [
-                "$Bianco4, $spray"
+                "$asplasher"
               ],
               "sections": [
                 {
@@ -1022,7 +1022,7 @@
               "name": "Beehive",
               "visibility_rules":["episode8", "allepisodes"],
               "access_rules": [
-                "$Bianco4, $yoshi"
+                "$asplasher, $yoshi"
               ],
               "sections": [
                 {
@@ -1043,7 +1043,7 @@
               "name": "Blue Butterfly",
               "visibility_rules":["episode8", "allepisodes"],
               "access_rules": [
-                "$Bianco4, $yoshi"
+                "$asplasher, $yoshi"
               ],
               "sections": [
                 {
@@ -1064,7 +1064,7 @@
               "name": "Platforms Cross",
               "visibility_rules":["episode5", "episode6", "episode7", "episode8", "allepisodes"],
               "access_rules": [
-                "$Bianco4,"
+                "$asplasher"
               ],
               "sections": [
                 {
@@ -2666,7 +2666,7 @@
         "name": "Banana Triangle",
         "visibility_rules":["episode1", "episode3", "episode5", "episode6", "episode7", "episode8", "allepisodes"],
         "access_rules": [
-          "$spray, $hover"
+          "$asplasher"
         ],
         "sections": [
           {
@@ -3122,7 +3122,7 @@
         "name": "Hotel Ledge",
         "visibility_rules":["episode2", "episode3", "episode4", "episode5", "episode6", "episode7", "episode8", "allepisodes"],
         "access_rules": [
-          "$spray, $hover"
+          "$asplasher"
         ],
         "sections": [
           {
@@ -3689,7 +3689,7 @@
         "name": "Bottom Secret Path",
         "visibility_rules":["$allEpisodes"],
         "access_rules": [
-          "$spray, $hover"
+          "$asplasher"
         ],
         "sections": [
           {
@@ -3710,7 +3710,7 @@
         "name": "Top Secret Path",
         "visibility_rules":["$allEpisodes"],
         "access_rules": [
-          "$spray, $hover"
+          "$asplasher"
         ],
         "sections": [
           {
@@ -3752,7 +3752,7 @@
         "name": "Bottom Pulley",
         "visibility_rules":["$allEpisodes"],
         "access_rules": [
-          "$spray, $hover"
+          "$asplasher"
         ],
         "sections": [
           {
@@ -3773,7 +3773,7 @@
         "name": "Top Pulley",
         "visibility_rules":["$allEpisodes"],
         "access_rules": [
-          "$spray, $hover"
+          "$asplasher"
         ],
         "sections": [
           {
@@ -3794,7 +3794,7 @@
         "name": "Tall Alcove",
         "visibility_rules":["$allEpisodes"],
         "access_rules": [
-          "$spray, $hover"
+          "$asplasher"
         ],
         "sections": [
           {
@@ -3857,7 +3857,7 @@
         "name": "Top Right Panel",
         "visibility_rules":["$allEpisodes"],
         "access_rules": [
-          "$spray, $hover"
+          "$asplasher"
         ],
         "sections": [
           {
@@ -3878,7 +3878,7 @@
         "name": "Bottom Left Panel",
         "visibility_rules":["$allEpisodes"],
         "access_rules": [
-          "$spray, $hover"
+          "$asplasher"
         ],
         "sections": [
           {
@@ -3899,7 +3899,7 @@
         "name": "Top Right Tunnel",
         "visibility_rules":["$allEpisodes"],
         "access_rules": [
-          "$spray, $hover"
+          "$asplasher"
         ],
         "sections": [
           {
@@ -3920,7 +3920,7 @@
         "name": "Bottom Right Tunnel",
         "visibility_rules":["$allEpisodes"],
         "access_rules": [
-          "$spray, $hover"
+          "$asplasher"
         ],
         "sections": [
           {
@@ -3941,7 +3941,7 @@
         "name": "Bottom Right Alcove",
         "visibility_rules":["$allEpisodes"],
         "access_rules": [
-          "$spray, $hover"
+          "$asplasher"
         ],
         "sections": [
           {
@@ -3962,7 +3962,7 @@
         "name": "Left Tunnel",
         "visibility_rules":["$allEpisodes"],
         "access_rules": [
-          "$spray, $hover"
+          "$asplasher"
         ],
         "sections": [
           {
@@ -3983,7 +3983,7 @@
         "name": "Bottom Left Alcove",
         "visibility_rules":["$allEpisodes"],
         "access_rules": [
-          "$spray, $hover"
+          "$asplasher"
         ],
         "sections": [
           {
@@ -4004,7 +4004,7 @@
         "name": "Bird Cliff Panel",
         "visibility_rules":["$allEpisodes"],
         "access_rules": [
-          "$spray, $hover"
+          "$asplasher"
         ],
         "sections": [
           {
@@ -4025,7 +4025,7 @@
         "name": "Bird Cliff Alcove",
         "visibility_rules":["$allEpisodes"],
         "access_rules": [
-          "$spray, $hover"
+          "$asplasher"
         ],
         "sections": [
           {
@@ -4109,7 +4109,7 @@
         "name": "Top Secret Path M",
         "visibility_rules":["$allEpisodes"],
         "access_rules": [
-          "$spray, $hover"
+          "$asplasher"
         ],
         "sections": [
           {
@@ -4136,7 +4136,7 @@
         "name": "Right Urn",
         "visibility_rules":["episode2", "episode3", "episode4", "episode5", "episode6", "episode7", "episode8", "allepisodes"],
         "access_rules": [
-          "$spray, $hover"
+          "$asplasher"
         ],
         "sections": [
           {
@@ -4157,7 +4157,7 @@
         "name": "Left Urn",
         "visibility_rules":["episode2", "episode3", "episode4", "episode5", "episode6", "episode7", "episode8", "allepisodes"],
         "access_rules": [
-          "$spray, $hover"
+          "$asplasher"
         ],
         "sections": [
           {
@@ -4220,7 +4220,7 @@
         "name": "Front Pillar",
         "visibility_rules":["episode4", "episode8", "allepisodes"],
         "access_rules": [
-          "$spray, $hover"
+          "$asplasher"
         ],
         "sections": [
           {
@@ -4241,7 +4241,7 @@
         "name": "Right Pillar",
         "visibility_rules":["episode4", "episode8", "allepisodes"],
         "access_rules": [
-          "$spray, $hover"
+          "$asplasher"
         ],
         "sections": [
           {
@@ -4262,7 +4262,7 @@
         "name": "Close Left Pillar",
         "visibility_rules":["episode4", "episode8", "allepisodes"],
         "access_rules": [
-          "$spray, $hover"
+          "$asplasher"
         ],
         "sections": [
           {
@@ -4283,7 +4283,7 @@
         "name": "Far Left Pillar",
         "visibility_rules":["episode4", "episode8", "allepisodes"],
         "access_rules": [
-          "$spray, $hover"
+          "$asplasher"
         ],
         "sections": [
           {
@@ -4859,7 +4859,7 @@
         "name": "Moon",
         "visibility_rules":["episode1", "episode3", "episode5", "episode7", "allepisodes"],
         "access_rules": [
-          "$spray, $hover"
+          "$asplasher"
         ],
         "sections": [
           {

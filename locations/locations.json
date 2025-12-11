@@ -6,14 +6,18 @@
     "children": [
       {
         "name": "Prologue",
-        "access_rules": [
-          ""
-        ],
+        "access_rules": [],
         "sections": [
           {
             "name": "Delfino Airstrip Dilemma",
-            "access_rules":["$splasher", "$skipintro"],
-            "visibility_rules":["nozzlespray", "nozzlehover"],
+            "access_rules": [
+              "$splasher",
+              "$skipintro"
+            ],
+            "visibility_rules": [
+              "nozzlespray",
+              "nozzlehover"
+            ],
             "item_count": 1
           }
         ],
@@ -27,12 +31,13 @@
       },
       {
         "name": "Epilogue",
-        "access_rules": [
-        ],
+        "access_rules": [],
         "sections": [
           {
             "name": "Red Coin Waterworks",
-            "access_rules":["$iscoronaenterable"],
+            "access_rules": [
+              "$iscoronaenterable, $turbo"
+            ],
             "item_count": 1
           }
         ],
@@ -50,12 +55,15 @@
     "name": "Delfino Plaza",
     "chest_unopened_img": "images/items/Shine_Sprite.png",
     "chest_opened_img": "images/items/Shine_Sprite_Grey.png",
-    "access_rules":["$splasher"],
+    "access_rules": [
+      "$splasher",
+      "$squirter",
+      "$skipintro"
+    ],
     "children": [
       {
         "name": "Secret Shine",
-        "access_rules": [
-        ],
+        "access_rules": [],
         "sections": [
           {
             "name": "Shine Sprite in the Sand",
@@ -73,12 +81,14 @@
       },
       {
         "name": "Secret Shine 2",
-        "access_rules": [
-        ],
+        "access_rules": [],
         "sections": [
           {
             "name": "Clean the West Bell",
-            "access_rules":["$hover", "$rocket"],
+            "access_rules": [
+              "$hover",
+              "$yoshi"
+            ],
             "item_count": 1
           }
         ],
@@ -92,8 +102,7 @@
       },
       {
         "name": "Secret Shine 3",
-        "access_rules": [
-        ],
+        "access_rules": [],
         "sections": [
           {
             "name": "Super Slide",
@@ -111,12 +120,13 @@
       },
       {
         "name": "Secret Shine 4",
-        "access_rules": [
-        ],
+        "access_rules": [],
         "sections": [
           {
             "name": "The Golden Bird",
-            "access_rules":["$spray, $hover"],
+            "access_rules": [
+              "$asplasher"
+            ],
             "item_count": 1
           }
         ],
@@ -130,8 +140,7 @@
       },
       {
         "name": "Secret Shine 5",
-        "access_rules": [
-        ],
+        "access_rules": [],
         "sections": [
           {
             "name": "Turbo Dash!",
@@ -149,8 +158,7 @@
       },
       {
         "name": "Secret Shine 6",
-        "access_rules": [
-        ],
+        "access_rules": [],
         "sections": [
           {
             "name": "Lighthouse Roof",
@@ -168,12 +176,13 @@
       },
       {
         "name": "Secret Shine 7",
-        "access_rules": [
-        ],
+        "access_rules": [],
         "sections": [
           {
             "name": "Clean the East Bell",
-            "access_rules":["$rocket, $spray"],
+            "access_rules": [
+              "$rocket, $splasher"
+            ],
             "item_count": 1
           }
         ],
@@ -187,8 +196,7 @@
       },
       {
         "name": "Secret Shine 8",
-        "access_rules": [
-        ],
+        "access_rules": [],
         "sections": [
           {
             "name": "Shine Gate",
@@ -206,12 +214,13 @@
       },
       {
         "name": "Secret Shine 9",
-        "access_rules": [
-        ],
+        "access_rules": [],
         "sections": [
           {
             "name": "Pachinko Game",
-            "access_rules":["hover", "rocket"],
+            "access_rules": [
+              "$hover"
+            ],
             "item_count": 1
           }
         ],
@@ -225,12 +234,13 @@
       },
       {
         "name": "Secret Shine 10",
-        "access_rules": [
-        ],
+        "access_rules": [],
         "sections": [
           {
             "name": "Lily Pad Ride",
-            "access_rules":["$hover, $spray, yoshi"],
+            "access_rules": [
+              "$asplasher, $yoshi"
+            ],
             "item_count": 1
           }
         ],
@@ -244,12 +254,13 @@
       },
       {
         "name": "Secret Shine 11",
-        "access_rules": [
-        ],
+        "access_rules": [],
         "sections": [
           {
             "name": "Turbo Track",
-            "access_rules":["turbo"],
+            "access_rules": [
+              "$turbo"
+            ],
             "item_count": 1
           }
         ],
@@ -263,12 +274,13 @@
       },
       {
         "name": "Secret Shine 12",
-        "access_rules": [
-        ],
+        "access_rules": [],
         "sections": [
           {
             "name": "Red Coin Field",
-            "access_rules":["spray, rocket", "hover"],
+            "access_rules": [
+              "$spray, $height"
+            ],
             "item_count": 1
           }
         ],
@@ -283,6 +295,9 @@
       {
         "name": "Secret Shine 13",
         "access_rules": [
+          "$spray",
+          "$yoshi",
+          "$skipintro"
         ],
         "sections": [
           {
@@ -305,6 +320,9 @@
       {
         "name": "Secret Shine 14",
         "access_rules": [
+          "$spray",
+          "$yoshi",
+          "$skipintro"
         ],
         "sections": [
           {
@@ -330,8 +348,7 @@
     "children": [
       {
         "name": "Episode 1",
-        "access_rules": [
-        ],
+        "access_rules": [],
         "sections": [
           {
             "name": "Road to the Big Windmill",
@@ -350,13 +367,14 @@
       },
       {
         "name": "Episode 2",
-        "access_rules": [
-        ],
+        "access_rules": [],
         "sections": [
           {
             "name": "Down with Petey Piranha!",
             "visibility_rules":["episode1", "episode2", "allepisodes"],
-            "access_rules":["$spray, $hover"],
+            "access_rules": [
+              "$asplasher"
+            ],
             "item_count": 1
           }
         ],
@@ -372,17 +390,21 @@
         "name": "Episode 3",
         "visibility_rules":["episode3", "allepisodes"],
         "access_rules": [
-          "$spray, $hover"
+          "$asplasher"
         ],
         "sections": [
           {
             "name": "The Hillside Cave Secret",
-            "access_rules":["$hover", "$rocket"],
+            "access_rules": [
+              "$height"
+            ],
             "item_count": 1
           },
           {
             "name": "Red Coins of the Hillside Cave",
-            "access_rules":["$hover"],
+            "access_rules": [
+              "$height"
+            ],
             "item_count": 1
           }
         ],
@@ -398,12 +420,14 @@
         "name": "Episode 4",
         "visibility_rules":["episode4", "allepisodes"],
         "access_rules": [
-          "$Bianco4"
+          "$asplasher, $height"
         ],
         "sections": [
           {
             "name": "Red Coins of Windmill Village",
-            "access_rules":["$hover", "$rocket"],
+            "access_rules": [
+              "$height"
+            ],
             "item_count": 1
           }
         ],
@@ -419,12 +443,14 @@
         "name": "Episode 5",
         "visibility_rules":["episode5", "allepisodes"],
         "access_rules": [
-          "$Bianco4"
+          "$asplasher, $height"
         ],
         "sections": [
           {
             "name": "Petey Piranha Strikes Back",
-            "access_rules":["$spray"],
+            "access_rules": [
+              "$spray"
+            ],
             "item_count": 1
           }
         ],
@@ -440,17 +466,21 @@
         "name": "Episode 6",
         "visibility_rules":["episode6", "allepisodes"],
         "access_rules": [
-          "$Bianco4"
+          "$asplasher, $height"
         ],
         "sections": [
           {
             "name": "Secret of the Dirty Lake",
-            "access_rules":["$spray", "$hover"],
+            "access_rules": [
+              "$splasher"
+            ],
             "item_count": 1
           },
           {
             "name": "Red Coins of the Dirty Lake",
-            "access_rules":["$spray"],
+            "access_rules": [
+              "$hover"
+            ],
             "item_count": 1
           }
         ],
@@ -466,11 +496,14 @@
         "name": "Episode 7",
         "visibility_rules":["episode7", "allepisodes"],
         "access_rules": [
-          "$Bianco4"
+          "$asplasher, $height"
         ],
         "sections": [
           {
             "name": "Shadow Mario on the Loose",
+            "access_rules": [
+              "$spray"
+            ],
             "item_count": 1
           }
         ],
@@ -486,11 +519,14 @@
         "name": "Episode 8",
         "visibility_rules":["episode8", "allepisodes"],
         "access_rules": [
-          "$Bianco4"
+          "$asplasher, $height"
         ],
         "sections": [
           {
             "name": "The Red Coins of the Lake",
+            "access_rules": [
+              "$height"
+            ],
             "item_count": 1
           }
         ],
@@ -513,8 +549,7 @@
       {
         "name": "Episode 1",
         "visibility_rules":["episode1", "allepisodes"],
-        "access_rules": [
-        ],
+        "access_rules": [],
         "sections": [
           {
             "name": "Gooper Blooper Breaks Out",
@@ -579,7 +614,7 @@
         "name": "Episode 4",
         "visibility_rules":["episode4", "allepisodes"],
         "access_rules": [
-          "$spray"
+          "$spray, $height"
         ],
         "sections": [
           {
@@ -605,12 +640,12 @@
         "name": "Episode 5",
         "visibility_rules":["episode5", "allepisodes"],
         "access_rules": [
-          "$spray"
+          "$spray, $height"
         ],
         "sections": [
           {
             "name": "Gooper Blooper Returns",
-            "access_rules":["$height"],
+            "access_rules":["$spray"],
             "item_count": 1
           }
         ],
@@ -626,12 +661,12 @@
         "name": "Episode 6",
         "visibility_rules":["episode6", "allepisodes"],
         "access_rules": [
-          "$spray"
+          "$spray, $height"
         ],
         "sections": [
           {
             "name": "Red Coins on the Water",
-            "access_rules":["$height"],
+            "access_rules":[],
             "item_count": 1
           }
         ],
@@ -647,12 +682,14 @@
         "name": "Episode 7",
         "visibility_rules":["episode7", "allepisodes"],
         "access_rules": [
-          "$spray"
+          "$spray, $height"
         ],
         "sections": [
           {
             "name": "Shadow Mario Revisited",
-            "access_rules":["$height"],
+            "access_rules": [
+              "$spray"
+            ],
             "item_count": 1
           }
         ],
@@ -668,12 +705,14 @@
         "name": "Episode 8",
         "visibility_rules":["episode8", "allepisodes"],
         "access_rules": [
-          "$spray"
+          "$spray, $height"
         ],
         "sections": [
           {
             "name": "Yoshi's Fruit Adventure",
-            "access_rules":["$yoshi, $height"],
+            "access_rules": [
+              "$yoshi"
+            ],
             "item_count": 1
           }
         ],
@@ -696,8 +735,7 @@
       {
         "name": "Episode 1",
         "visibility_rules":["episode1", "allepisodes"],
-        "access_rules": [
-        ],
+        "access_rules": [],
         "sections": [
           {
             "name": "Dune Bud Sand Castle Secret",
@@ -706,7 +744,7 @@
           },
           {
             "name": "Red Coins in the Sand Castle",
-            "access_rules":["$hover"],
+            "access_rules":["$asplasher"],
             "item_count": 1
           }
         ],
@@ -721,12 +759,11 @@
       {
         "name": "Episode 2",
         "visibility_rules":["episode2", "allepisodes"],
-        "access_rules": [
-        ],
+        "access_rules": [],
         "sections": [
           {
             "name": "Mirror Madness! Tilt, Slam, Bam!",
-            "access_rules":["$spray, $hover"],
+            "access_rules":["$asplasher"],
             "item_count": 1
           }
         ],
@@ -742,11 +779,12 @@
         "name": "Episode 3",
         "visibility_rules":["episode3", "allepisodes"],
         "access_rules": [
+          "$asplasher"
         ],
         "sections": [
           {
             "name": "Wiggler Ahoy! Full Steam Ahead!",
-            "access_rules":["$spray, $hover"],
+            "access_rules":["$splasher"],
             "item_count": 1
           }
         ],
@@ -762,11 +800,12 @@
         "name": "Episode 4",
         "visibility_rules":["episode4", "allepisodes"],
         "access_rules": [
-          "$hover, $spray"
+          "$asplasher"
         ],
         "sections": [
           {
             "name": "The Sand Bird is Born",
+            "access_rules": ["$hover"],
             "item_count": 1
           }
         ],
@@ -809,7 +848,7 @@
         "name": "Episode 5",
         "visibility_rules":["episode5", "allepisodes"],
         "access_rules": [
-          "$hover, $spray"
+          "$asplasher"
         ],
         "sections": [
           {
@@ -830,11 +869,12 @@
         "name": "Episode 6",
         "visibility_rules":["episode6", "allepisodes"],
         "access_rules": [
+          "$asplasher"
         ],
         "sections": [
           {
             "name": "Red Coins in the Coral Reef",
-            "access_rules":["$hover, $spray"],
+            "access_rules":[],
             "item_count": 1
           }
         ],
@@ -850,11 +890,12 @@
         "name": "Episode 7",
         "visibility_rules":["episode7", "allepisodes"],
         "access_rules": [
+          "$asplasher"
         ],
         "sections": [
           {
             "name": "It's Shadow Mario! After Him!",
-            "access_rules":["$spray, $hover"],
+            "access_rules":["$splasher"],
             "item_count": 1
           }
         ],
@@ -870,11 +911,15 @@
         "name": "Episode 8",
         "visibility_rules":["episode8", "allepisodes"],
         "access_rules": [
+          "$asplasher"
         ],
         "sections": [
           {
             "name": "The Watermelon Festival",
-            "access_rules":["$spray, $hover"],
+            "access_rules": [
+              "$splasher",
+              "$turbo"
+            ],
             "item_count": 1
           }
         ],
@@ -889,8 +934,7 @@
       {
         "name": "Secret Shine",
         "visibility_rules":["$allEpisodes"],
-        "access_rules": [
-        ],
+        "access_rules": [],
         "sections": [
           {
             "name": "Sandy Shine Sprite",
@@ -917,8 +961,7 @@
       {
         "name": "Episode 1",
         "visibility_rules":["episode1", "allepisodes"],
-        "access_rules": [
-        ],
+        "access_rules": [],
         "sections": [
           {
             "name": "Mecha-Bowser Appears!",
@@ -938,18 +981,19 @@
         "name": "Episode 2",
         "visibility_rules":["episode2", "allepisodes"],
         "access_rules": [
-          "$spray",
-          "$skipPinnaYoshi"
+          "$spray"
         ],
         "sections": [
           {
             "name": "The Beach Cannon's Secret",
-            "access_rules":["$spray"],
+            "access_rules": [
+              "$splasher"
+            ],
             "item_count": 1
           },
           {
             "name": "Red Coins in the Cannon",
-            "access_rules":["$hover"],
+            "access_rules":["$asplasher"],
             "item_count": 1
           }
         ],
@@ -965,8 +1009,7 @@
         "name": "Episode 3",
         "visibility_rules":["episode3", "allepisodes"],
         "access_rules": [
-          "$spray",
-          "$skipPinnaYoshi"
+          "$spray"
         ],
         "sections": [
           {
@@ -987,12 +1030,13 @@
         "name": "Episode 4",
         "visibility_rules":["episode4", "allepisodes"],
         "access_rules": [
+          "$asplasher"
         ],
         "sections": [
           {
             "name": "The Wilted Sunflowers",
-            "access_rules":[
-              "$spray, $hover"
+            "access_rules": [
+              "$splasher"
             ],
             "item_count": 1
           }
@@ -1009,12 +1053,14 @@
         "name": "Episode 5",
         "visibility_rules":["episode5", "allepisodes"],
         "access_rules": [
-          "$spray, $hover",
-          "$skipPinnaYoshi, $spray"
+          "$asplasher, $yoshi"
         ],
         "sections": [
           {
             "name": "The Runaway Ferris Wheel",
+            "access_rules": [
+              "$asplasher"
+            ],
             "item_count": 1
           }
         ],
@@ -1030,7 +1076,7 @@
         "name": "Episode 6",
         "visibility_rules":["episode6", "allepisodes"],
         "access_rules": [
-          "$spray, $hover"
+          "$asplasher, $yoshi"
         ],
         "sections": [
           {
@@ -1056,11 +1102,14 @@
         "name": "Episode 7",
         "visibility_rules":["episode7", "allepisodes"],
         "access_rules": [
-          "$spray, $hover, $yoshi"
+          "$asplasher, $yoshi"
         ],
         "sections": [
           {
             "name": "Shadow Mario in the Park",
+            "access_rules": [
+              "$asplasher"
+            ],
             "item_count": 1
           }
         ],
@@ -1076,11 +1125,14 @@
         "name": "Episode 8",
         "visibility_rules":["episode8", "allepisodes"],
         "access_rules": [
-          "$spray, $hover, $yoshi"
+          "$asplasher, $yoshi"
         ],
         "sections": [
           {
             "name": "Roller Coaster Balloons",
+            "access_rules": [
+              "$asplasher"
+            ],
             "item_count": 1
           }
         ],
@@ -1103,12 +1155,13 @@
       {
         "name": "Episode 1",
         "visibility_rules":["episode1", "allepisodes"],
-        "access_rules": [
-        ],
+        "access_rules": [],
         "sections": [
           {
             "name": "The Manta Storm",
-            "access_rules":["$spray", "$hover"],
+            "access_rules": [
+              "$asplasher"
+            ],
             "item_count": 1
           }
         ],
@@ -1124,15 +1177,17 @@
         "name": "Episode 2",
         "visibility_rules":["episode2", "allepisodes"],
         "access_rules": [
-          "$spray", "$hover"
+          "$asplasher"
         ],
         "sections": [
           {
             "name": "The Hotel Lobby's Secret",
+            "access_rules": ["$splasher"],
             "item_count": 1
           },
           {
             "name": "Red Coins in the Boo's Big Mouth",
+            "access_rules": ["$splasher"],
             "item_count": 1
           }
         ],
@@ -1148,12 +1203,12 @@
         "name": "Episode 3",
         "visibility_rules":["episode3", "allepisodes"],
         "access_rules": [
-          "$spray", "$hover"
+          "$asplasher"
         ],
         "sections": [
           {
             "name": "Mysterious Hotel Delfino",
-            "access_rules":["$yoshi"],
+            "access_rules": ["$asplasher"],
             "item_count": 1
           }
         ],
@@ -1169,17 +1224,17 @@
         "name": "Episode 4",
         "visibility_rules":["episode4", "allepisodes"],
         "access_rules": [
-          "$yoshi"
+          "$asplasher"
         ],
         "sections": [
           {
             "name": "The Secret of Casino Delfino",
-            "access_rules":["$spray"],
+            "access_rules": ["$asplasher"],
             "item_count": 1
           },
           {
             "name": "Red Coin Winnings in the Casino",
-            "access_rules":["$spray"],
+            "access_rules": ["$asplasher"],
             "item_count": 1
           }
         ],
@@ -1195,12 +1250,12 @@
         "name": "Episode 5",
         "visibility_rules":["episode5", "allepisodes"],
         "access_rules": [
-          "$yoshi"
+          "$asplasher"
         ],
         "sections": [
           {
             "name": "King Boo Down Below",
-            "access_rules":["$spray"],
+            "access_rules": ["$asplasher"],
             "item_count": 1
           }
         ],
@@ -1216,12 +1271,12 @@
         "name": "Episode 6",
         "visibility_rules":["episode6", "allepisodes"],
         "access_rules": [
-          "$yoshi"
+          "$asplasher"
         ],
         "sections": [
           {
             "name": "Scrubbing Sirena Beach",
-            "access_rules":["$spray"],
+            "access_rules": ["$asplasher"],
             "item_count": 1
           }
         ],
@@ -1237,12 +1292,12 @@
         "name": "Episode 7",
         "visibility_rules":["episode7", "allepisodes"],
         "access_rules": [
-          "$yoshi"
+          "$asplasher"
         ],
         "sections": [
           {
             "name": "Shadow Mario Checks In",
-            "access_rules":["$spray"],
+            "access_rules": ["$asplasher"],
             "item_count": 1
           }
         ],
@@ -1258,12 +1313,12 @@
         "name": "Episode 8",
         "visibility_rules":["episode8", "allepisodes"],
         "access_rules": [
-          "$yoshi"
+          "$asplasher"
         ],
         "sections": [
           {
             "name": "Red Coins in the Hotel",
-            "access_rules":["$spray"],
+            "access_rules": ["$asplasher"],
             "item_count": 1
           }
         ],
@@ -1281,16 +1336,18 @@
     "name": "Noki Bay",
     "chest_unopened_img": "images/items/Shine_Sprite.png",
     "chest_opened_img": "images/items/Shine_Sprite_Grey.png",
-    "access_rules":["$isNokiEnterable, $spray, $hover"],
+    "access_rules":["$isNokiEnterable"],
     "children": [
       {
         "name": "Episode 1",
         "visibility_rules":["episode1", "allepisodes"],
-        "access_rules": [
-        ],
+        "access_rules": [],
         "sections": [
           {
             "name": "Uncork the Waterfall",
+            "access_rules": [
+              "$asplasher"
+            ],
             "item_count": 1
           }
         ],
@@ -1305,11 +1362,13 @@
       {
         "name": "Episode 2",
         "visibility_rules":["episode2", "allepisodes"],
-        "access_rules": [
-        ],
+        "access_rules": [],
         "sections": [
           {
             "name": "The Boss of Tricky Ruins",
+            "access_rules": [
+              "$asplasher"
+            ],
             "item_count": 1
           }
         ],
@@ -1324,11 +1383,13 @@
       {
         "name": "Episode 3",
         "visibility_rules":["episode3", "allepisodes"],
-        "access_rules": [
-        ],
+        "access_rules": [],
         "sections": [
           {
             "name": "Red Coins in a Bottle",
+            "access_rules": [
+              "$asplasher"
+            ],
             "item_count": 1
           }
         ],
@@ -1343,11 +1404,13 @@
       {
         "name": "Episode 4",
         "visibility_rules":["episode4", "allepisodes"],
-        "access_rules": [
-        ],
+        "access_rules": [],
         "sections": [
           {
             "name": "Eely-Mouth's Dentist",
+            "access_rules": [
+              "$asplasher"
+            ],
             "item_count": 1
           }
         ],
@@ -1362,11 +1425,13 @@
       {
         "name": "Episode 5",
         "visibility_rules":["episode5", "allepisodes"],
-        "access_rules": [
-        ],
+        "access_rules": [],
         "sections": [
           {
             "name": "Il Piantissimo's Surf Swim",
+            "access_rules": [
+              "$asplasher"
+            ],
             "item_count": 1
           }
         ],
@@ -1381,15 +1446,20 @@
       {
         "name": "Episode 6",
         "visibility_rules":["episode6", "allepisodes"],
-        "access_rules": [
-        ],
+        "access_rules": [],
         "sections": [
           {
             "name": "The Shell's Secret",
+            "access_rules": [
+              "$asplasher"
+            ],
             "item_count": 1
           },
           {
             "name": "Red Coins on the Half Shell",
+            "access_rules": [
+              "$asplasher"
+            ],
             "item_count": 1
           }
         ],
@@ -1404,11 +1474,13 @@
       {
         "name": "Episode 7",
         "visibility_rules":["episode7", "allepisodes"],
-        "access_rules": [
-        ],
+        "access_rules": [],
         "sections": [
           {
             "name": "Hold It, Shadow Mario!",
+            "access_rules": [
+              "$asplasher"
+            ],
             "item_count": 1
           }
         ],
@@ -1423,11 +1495,13 @@
       {
         "name": "Episode 8",
         "visibility_rules":["episode8", "allepisodes"],
-        "access_rules": [
-        ],
+        "access_rules": [],
         "sections": [
           {
             "name": "The Red Coin Fish",
+            "access_rules": [
+              "$asplasher"
+            ],
             "item_count": 1
           }
         ],
@@ -1442,11 +1516,13 @@
       {
         "name": "Secret Shine",
         "visibility_rules":["$allEpisodes"],
-        "access_rules": [
-        ],
+        "access_rules": [],
         "sections": [
           {
             "name": "A Golden Bird",
+            "access_rules": [
+              "$spray"
+            ],
             "item_count": 1
           }
         ],
@@ -1474,12 +1550,13 @@
       {
         "name": "Episode 1",
         "visibility_rules":["episode1", "allepisodes"],
-        "access_rules": [
-        ],
+        "access_rules": [],
         "sections": [
           {
             "name": "Chain Chomplets Unchained",
-            "access_rules":["$spray"],
+            "access_rules": [
+              "$rocket, $splasher"
+            ],
             "item_count": 1
           }
         ],
@@ -1494,12 +1571,13 @@
       {
         "name": "Episode 2",
         "visibility_rules":["episode2", "allepisodes"],
-        "access_rules": [
-        ],
+        "access_rules": [],
         "sections": [
           {
             "name": "Il Piantissimo's Crazy Climb",
-            "access_rules":["$spray"],
+            "access_rules": [
+              "$rocket, $spray"
+            ],
             "item_count": 1
           }
         ],
@@ -1514,12 +1592,13 @@
       {
         "name": "Episode 3",
         "visibility_rules":["episode3", "allepisodes"],
-        "access_rules": [
-        ],
+        "access_rules": [],
         "sections": [
           {
             "name": "The Goopy Inferno",
-            "access_rules":["$spray, $height"],
+            "access_rules": [
+              "$aheight"
+            ],
             "item_count": 1
           }
         ],
@@ -1534,12 +1613,13 @@
       {
         "name": "Episode 4",
         "visibility_rules":["episode4", "allepisodes"],
-        "access_rules": [
-        ],
+        "access_rules": [],
         "sections": [
           {
             "name": "Chain Chomp's Bath",
-            "access_rules":["$spray, $height"],
+            "access_rules": [
+              "$rocket, $splasher"
+            ],
             "item_count": 1
           }
         ],
@@ -1560,12 +1640,16 @@
         "sections": [
           {
             "name": "Secret of the Village Underside",
-            "access_rules":["$spray, $height"],
+            "access_rules": [
+              "$yoshi"
+            ],
             "item_count": 1
           },
           {
             "name": "Red Coin Chucksters",
-            "access_rules":["$spray, $height"],
+            "access_rules": [
+              "$hover"
+            ],
             "item_count": 1
           }
         ],
@@ -1586,7 +1670,9 @@
         "sections": [
           {
             "name": "Pianta's in Need",
-            "access_rules":["$spray, $height"],
+            "access_rules": [
+              "$splasher"
+            ],
             "item_count": 1
           }
         ],
@@ -1607,7 +1693,9 @@
         "sections": [
           {
             "name": "Shadow Mario Runs Wild",
-            "access_rules":["$spray, $height"],
+            "access_rules": [
+              "$spray"
+            ],
             "item_count": 1
           }
         ],
@@ -1628,7 +1716,10 @@
         "sections": [
           {
             "name": "Fluff Festival Coin Hunt",
-            "access_rules":["$spray, $rocket"],
+            "access_rules": [
+              "$hover",
+              "$rocket"
+            ],
             "item_count": 1
           }
         ],
@@ -1676,7 +1767,9 @@
         "sections": [
           {
             "name": "Father and Son Shine!",
-            "access_rules":["$spray, $hover, $rocket"],
+            "access_rules": [
+              "$asplasher, $rocket"
+            ],
             "item_count": 1
           }
         ],
