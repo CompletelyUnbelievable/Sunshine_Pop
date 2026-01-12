@@ -140,7 +140,7 @@ end
 
 -- Entrance Functions
 
-function buggedEntryLogic(ticket) -- I had forgotten, but all level entry logic is screwed in SMS AP v0.4.3-alpha b/c entry requirements don't exist in ticket mode when fluddless at least.
+function buggedEntryLogic(ticket) -- I had forgotten, but all level entry logic is screwed in SMS AP v0.4.3-alpha b/c entry requirements don't exist in ticket mode when fluddless at least along with some other wierd behavior in vanilla mode.
 	return skipintro() and ((type(ticket) == "string" and isTicket() and has(ticket)) or isVanilla())
 end
 
@@ -328,7 +328,7 @@ end
 
 -- Boathouse
 
-function BH(sAmount) -- Replaces BH1; sAmount meaning shine amount.
+function BH(sAmount) -- Replaces BH1; sAmount meaning shine amount. How many boathouse shines are obtainable with how many blue coins have already been obtained.
 	sAmount = tonumber(sAmount)
 	if not sAmount then
 		sAmount = 1
@@ -336,195 +336,12 @@ function BH(sAmount) -- Replaces BH1; sAmount meaning shine amount.
 	return (has("blues") == has("blues_on") or has("blues_boathouse")) and blues() > ((sAmount * 10) - 1)
 end
 
-function BH2()
-    return BH(2)
-end
-
-function BH3()
-    return BH(3)
-end
-
-function BH4()
-    return BH(4)
-end
-function BH5()
-    return BH(5)
-end
-
-function BH6()
-    return BH(6)
-end
-
-function BH7()
-    return BH(7)
-end
-
-function BH8()
-    return BH(8)
-end
-
-function BH9()
-    return BH(9)
-end
-
-function BH10()
-    return BH(10)
-end
-
-function BH11()
-    return BH(11)
-end
-
-function BH12()
-    return BH(12)
-end
-
-function BH13()
-    return BH(13)
-end
-
-function BH14()
-    return BH(14)
-end
-
-function BH15()
-    return BH(15)
-end
-
-function BH16()
-    return BH(16)
-end
-
-function BH17()
-    return BH(17)
-end
-
-function BH18()
-    return BH(18)
-end
-
-function BH19()
-    return BH(19)
-end
-
-function BH20()
-    return BH(20)
-end
-
-function BH21()
-    return BH(21)
-end
-
-function BH22()
-    return BH(22)
-end
-
-function BH23()
-    return BH(23)
-end
-
-function BH24()
-    return BH(24)
-end
-
-function BHT(sAmount)
+function BHT(sAmount) -- Boadhouse trades logic for visibility.
 	sAmount = tonumber(sAmount)
 	if not sAmount then
 		return Boathousetrade() > 0
 	end
     return Boathousetrade() > sAmount
-end
-
-function B2()
-    return BHT(1)
-end
-
-function B3()
-    return BHT(2)
-end
-
-function B4()
-    return BHT(3)
-end
-
-function B5()
-    return BHT(4)
-end
-
-function B6()
-    return BHT(5)
-end
-
-function B7()
-    return BHT(6)
-end
-
-function B8()
-    return BHT(7)
-end
-
-function B9()
-    return BHT(8)
-end
-
-function B10()
-    return BHT(9)
-end
-
-function B11()
-    return BHT(10)
-end
-
-function B12()
-    return BHT(11)
-end
-
-function B13()
-    return BHT(12)
-end
-
-function B14()
-    return BHT(13)
-end
-
-function B15()
-    return BHT(14)
-end
-
-function B16()
-    return BHT(15)
-end
-
-function B17()
-    return BHT(16)
-end
-
-function B18()
-    return BHT(17)
-end
-
-function B19()
-    return BHT(18)
-end
-
-function B20()
-    return BHT(19)
-end
-
-function B21()
-    return BHT(20)
-end
-
-function B22()
-    return BHT(21)
-end
-
-function B23()
-    return BHT(22)
-end
-
-function B24()
-    return BHT(23)
 end
 
 -- Episode Select

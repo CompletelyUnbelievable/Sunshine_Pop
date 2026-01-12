@@ -2,7 +2,7 @@
     "versions": [
         {
             "package_version": "0.3.1",
-            "download_url": "https://github.com/AmedMusl/Sunshine_Pop/releases/download/v0.3.1/sms_poptracker.zip",
+            "download_url": "https://github.com/UmedMuzl/Sunshine_Pop/releases/download/v0.3.1/sms_poptracker.zip",
             "sha256": "C89BE396BFFEE1682BEBF52E59278222D68467AF2A8C81F3107D27EF020A7FE6",
             "changelog": [
                 "SMS poptracker update 0.3.1 to catchup to SMS-AP v0.4.3-alpha.",
